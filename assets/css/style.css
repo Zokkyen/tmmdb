@@ -171,7 +171,8 @@ p {
 
 h3 {
     font-size: 1.5rem;
-    padding: 10px;
+    padding-bottom: 10px;
+    padding-right: 5px;
 }
 
 #moreInfo {
