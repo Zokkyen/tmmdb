@@ -74,8 +74,8 @@ fetch('https://api.themoviedb.org/3/movie/top_rated?api_key=804fd7354daa8f7c33da
     
         /* add the resume in info part */
         let lenOverview = data.results[i].overview.length;
-        if(lenOverview > 100){
-            myInfos.innerHTML += `<p>${data.results[i].overview.slice(0, 100)}</p>`;
+        if(lenOverview > 140){
+            myInfos.innerHTML += `<p>${data.results[i].overview.slice(0, 140)}</p>`;
         }
         else{
             myInfos.innerHTML += `<p>${data.results[i].overview.split(".", 1)}.</p>`;
