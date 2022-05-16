@@ -296,6 +296,6 @@ input:checked + .slider:before {
 @media (min-width: 992px) {
     .switch {
         top: 10px;
-        right: 10px;
+        right: calc(5px + 3vw);
     }
 }
