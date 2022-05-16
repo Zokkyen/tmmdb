@@ -1,7 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 body {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    background-color: #FECC00;
     padding: 0;
+    margin: 0;
+}
+
+h1 {
+    color: black;
+    font-size: 2.0rem;
+    text-align: left;
+    padding: 10px;
     margin: 0;
 }
 
@@ -47,19 +61,6 @@ header {
 }
 
 /*---------- Principal Website ----------*/
-body {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    font-family: 'Roboto', sans-serif;
-    background-color: #FECC00;
-}
-
-h1 {
-    color: black;
-    font-size: 2.0rem;
-}
 
 #mainContent {
     display: flex;
@@ -227,7 +228,7 @@ h3 {
     display: inline-block;
     width: 60px;
     height: 34px;
-    top: 68px;
+    top: 50px;
     right: 10px;
 }
 
@@ -284,9 +285,9 @@ input:checked + .slider:before {
     border-radius: 50%;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 992px) {
     .switch {
-        top: 20px;
+        top: 10px;
         right: 10px;
     }
 }
