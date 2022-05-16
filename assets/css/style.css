@@ -58,7 +58,7 @@ body {
 
 h1 {
     color: black;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
 }
 
 #mainContent {
@@ -227,7 +227,7 @@ h3 {
     display: inline-block;
     width: 60px;
     height: 34px;
-    top: 50px;
+    top: 55px;
     right: 10px;
 }
 
