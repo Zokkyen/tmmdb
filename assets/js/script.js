@@ -167,8 +167,8 @@ darkMode.addEventListener('click', () => {
         }
     });
 
-    let moreInfo = document.querySelectorAll('.infoButton');
-    moreInfo.forEach(element => {
+    let infoButton = document.querySelectorAll('.infoButton');
+    infoButton.forEach(element => {
         if(element.style.color != "black"){
             element.style.color = "black";
         }
@@ -182,4 +182,28 @@ darkMode.addEventListener('click', () => {
             element.style.backgroundColor = "black";
         }        
     });
+
+    let bkgdModal = document.querySelector('.modal-content');
+    if(bkgdModal.style.backgroundColor != "black"){
+        bkgdModal.style.backgroundColor = "black";
+    }
+    else{
+        bkgdModal.style.backgroundColor = "white";
+    }
+
+    let titleMovie = document.getElementById('titleMovie');
+    if(titleMovie.style.color != "white"){
+        titleMovie.style.color = "white";
+    }
+    else{
+        titleMovie.style.color = "black";
+    }
+
+    let moreInfo = document.getElementById('moreInfo');
+    if(moreInfo.style.color != "white"){
+        moreInfo.style.color = "white";
+    }
+    else{
+        moreInfo.style.color = "black";
+    }
 })

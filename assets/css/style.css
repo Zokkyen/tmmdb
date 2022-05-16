@@ -144,24 +144,14 @@ p {
 }
 
 .modal-content {
-    background-color: #fefefe;
+    background-color: white;
     margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
     height: auto;
     border-radius: 5px;
-    background-color: grey;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-}
-
-@media (min-width: 576px) {
-    h1 {
-        font-size: 2.0rem;
-    }
-    .modal-content {
-        width: 40%;
-    }
 }
 
 .close {
@@ -179,7 +169,31 @@ p {
 }
 
 h3 {
+    font-size: 1.5rem;
     padding-bottom: 10px;
+}
+
+#moreInfo {
+    font-size: 1.0rem;
+}
+
+@media (min-width: 576px) {
+    h1 {
+        font-size: 2.0rem;
+    }
+    .modal-content {
+        width: 40%;
+    }
+}
+
+@media (min-width: 992px) {
+    h3 {
+        font-size: 1.8rem;
+    }
+    
+    #moreInfo {
+        font-size: 1.2rem;
+    }
 }
 
 /*---------- My footer ----------*/
