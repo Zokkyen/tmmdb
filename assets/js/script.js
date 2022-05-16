@@ -74,8 +74,8 @@ fetch('https://api.themoviedb.org/3/movie/top_rated?api_key=804fd7354daa8f7c33da
     
         /* add the resume in info part */
         let lenOverview = data.results[i].overview.length;
-        if(lenOverview > 140){
-            myInfos.innerHTML += `<p>${data.results[i].overview.slice(0, 140)}</p>`;
+        if(lenOverview > 100){
+            myInfos.innerHTML += `<p>${data.results[i].overview.slice(0, 100)}</p>`;
         }
         else{
             myInfos.innerHTML += `<p>${data.results[i].overview.split(".", 1)}.</p>`;
@@ -88,7 +88,7 @@ fetch('https://api.themoviedb.org/3/movie/top_rated?api_key=804fd7354daa8f7c33da
         } 
     
         /* calcul the average note and transform to 1-5 stars */
-        myInfos.innerHTML += `<div id="note${i}"></div>`;
+        myInfos.innerHTML += `<div class="noteAvg" id="note${i}"></div>`;
         let vote = document.getElementById(`note${i}`);
         let note = Math.round(data.results[i].vote_average, 1.0)/2;
         for(let j = 0; j < note; j++){
@@ -205,5 +205,13 @@ darkMode.addEventListener('click', () => {
     }
     else{
         moreInfo.style.color = "black";
+    }
+
+    let closeModal = document.querySelector('.close');
+    if(closeModal.style.color != "white"){
+        closeModal.style.color = "white";
+    }
+    else{
+        closeModal.style.color = "black";
     }
 })
